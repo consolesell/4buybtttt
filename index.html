@@ -1221,6 +1221,7 @@ granEl.addEventListener('change', () => {
 liveModeCheckbox.addEventListener('change', () => {
     confirmLiveGroup.style.display = liveModeCheckbox.checked ? 'flex' : 'none';
     if (liveModeCheckbox.checked) {
+        confirmLiveCheckbox.checked = true;
         appendFeed('⚠️ LIVE MODE ENABLED - Real money at risk! Proceed with extreme caution!', 'warn');
     }
 });
